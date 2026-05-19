@@ -44,6 +44,7 @@ export async function logout(){
     }
     catch(err){
         console.log("Error Message: ",err.message);
+        throw err;
     }
 }
 
@@ -57,5 +58,6 @@ export async function getMe(){
     }
     catch(err){
         console.log('Error Message: ',err.message);
+        throw err;
     }
 }
